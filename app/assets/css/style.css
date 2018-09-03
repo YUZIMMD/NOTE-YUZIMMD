@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 16px;
+    background: #F2F2F2;
+    font-family: MicrosoftYaHei-Bold;
+}
+
+.text-a-l {
+    text-align: left;
+}
+
+.text-a-r {
+    text-align: right;
+}
+
+.text-a-c {
+    text-align: center;
+}
+
+
+/* 公共复用小样式 */
+
+.m-l-xs {
+    margin-left: 5px;
+}
+
+#iLogin header {
+    background-color: rgb(72, 163, 208);
+    height: 18.125rem;
+    width: 100vw;
+}
+
+#iLogin h3 {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    font-size: 1.75rem;
+    color: white;
+    transform: translateY(-50%);
+}
+
+#iLogin .Content {
+    width: 504px;
+    height: 324px;
+    border: solid 5px rgba(0, 0, 0, 0.6);
+    background-color: white;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 40px 60px 0px 50px;
+    top: calc((100vh - 324px) /2);
+    left: calc((100vw - 504px) /2);
+    animation: 1.5s Login;
+}
+
+.userName_font .el-form-item__label {
+    text-align: left;
+}
+
+#iLogin .Content .el-input__inner {
+    height: 2rem;
+}
+
+#iLogin .Content img {
+    height: 2rem;
+    vertical-align: middle;
+    margin-left: 1em;
+}
+
+.password_font_algin .el-form-item__label {
+    text-align: right;
+    padding-right: 1.875rem;
+}
+
+
+/* 顶部样式 */
+
+.header_menu {
+    height: 64px;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.header_icon {
+    width: 1.7rem;
+    height: 1.5rem;
+    position: relative;
+    top: -0.2rem;
+    padding-left: 1.25rem;
+}
+
+.headerTitle {
+    position: relative;
+    top: -0.5rem;
+    padding-left: 0.475rem;
+}
+
+.header_menu .headerTitle h4 {
+    display: inline-block;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    font-size: 16px
+}
+
+.header_menu .headTitle {
+    background: #f78095;
+    line-height: 80px;
+}
+
+.local_icon {
+    width: 0.7375rem;
+    height: 1rem;
+    position: relative;
+    top: 0.2rem;
+    right: 0.2rem;
+}
+
+.userInconsStyle {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+.menuIconV1 {
+    width: 1rem;
+    height: 0.8rem;
+    padding-left: 1.2rem;
+}
+
+.email_icon {
+    width: 1.9375rem;
+    height: 1.25rem;
+    position: relative;
+    top: 0.3rem;
+}
+
+.userTitle {
+    position: relative;
+    display: inline-block;
+    padding: 0 1rem 0 0.3rem;
+    cursor: pointer;
+}
+
+.header_menu .el-badge {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    left: 31px;
+    top: -5px;
+    z-index: 10;
+}
+
+.badgeStyle {
+    background: #FF7371;
+    border-radius: 100px;
+    font-family: MicrosoftYaHei;
+    font-size: 9px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 9px;
+    display: inline-block;
+    padding: 4px 6px;
+    margin-left: 5px;
+}
+
+.userExit {
+    vertical-align: super;
+}
+
+.header_sub_row,
+.header_sub_row>div {
+    height: 100%;
+    line-height: 64px;
+}
+
+.header_menu .el-icon-arrow-down.el-icon--right {
+    font-size: 0.5rem;
+    position: relative;
+    top: 0.3rem;
+}
+
+.header_menu .el-icon-arrow-down:before {
+    position: relative;
+    top: -0.55rem;
+    left: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#iLogin .submit {
+    width: calc(100% - 5rem);
+    margin: 2rem 0 0 5rem;
+    background-color: rgb(22, 155, 213);
+    border-radius: 6px;
+    height: 2.0625rem;
+    letter-spacing: 1em;
+    font-weight: 600;
+    line-height: 2.0625rem;
+    padding: 0;
+}
+
+.header_menu span {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    line-height: 21px;
+}
+
+
+/*左侧菜单*/
+
+.left_menu {
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+    float: left;
+    display: inline;
+    background: #25364f;
+    width: 100%;
+}
+
+@keyframes Login {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* 内容区样式公共样式 */
+
+.Content {
+    float: right;
+    height: auto;
+}
+
+.content-item {
+    margin: 1rem;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    overflow: hidden;
+    position: relative;
+    min-height: 400px;
+}
+
+
+/* 模态框 */
+
+.el-dialog__title {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 15px;
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    line-height: 21px;
+    font-weight: 600;
+}
+
+.el-dialog__header {
+    padding: 10px;
+    border-bottom: 2px solid #F4F4F4;
+}
+
+.el-dialog__headerbtn {
+    top: 10px;
+    right: 15px;
+}
+
+
+/* 步骤条相关 */
+
+.el-step__title {
+    font-family: MicrosoftYaHei;
+    font-size: 13px;
+    color: #DADADA;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.el-step__title.is-finish {
+    color: #00A0FF;
+}
+
+.is-finish .el-step__icon {
+    background: #00A0FF;
+}
+
+.el-step__head.is-finish {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.el-step__title.is-process,
+.el-step__head.is-process {
+    color: #DADADA;
+}
+
+.el-step__icon.is-text {
+    border: 2px solid #DADADA;
+}
+
+.is-finish .el-step__icon.is-text {
+    border: 2px solid #00A0FF;
+}
+
+.el-step__icon {
+    width: 30px;
+    height: 30px;
+}
+
+.el-step.is-horizontal .el-step__line {
+    top: 14px;
+    background-color: #dadada;
+}
+
+
+/* 新增按钮 */
+
+.addBtnStyle {
+    background-image: linear-gradient(-180deg, #30B2FF 0%, #00A0FF 100%);
+    border: 1px solid #008CDF;
+    box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, 0.10);
+    border-radius: 4px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    line-height: 21px;
+    padding: 4px 13px;
+    margin-left: 15px
+}
+
+
+/* 一般操作按钮 */
+
+.defaultBtnStyle {
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #F7F7F7 100%);
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    line-height: 21px;
+    padding: 4px 13px;
+}
+
+.el-table .tr-active td {
+    background: rgba(0, 133, 255, 0.10)!important;
+}
+
+
+/* 面包屑 */
+
+.breadcrumbStyle {
+    margin: 1rem;
+}
+
+.breadcrumbStyle .locationActive {
+    opacity: 0.5;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    font-weight: normal;
+    float: left;
+}
+
+.breadcrumbStyle .el-breadcrumb__inner {
+    color: #4A4A4A;
+    opacity: 0.5;
+}
+
+.breadcrumbStyle .el-breadcrumb__item:last-child .el-breadcrumb__inner {
+    opacity: 1;
+}
