@@ -1,0 +1,7 @@
+node_modules/
+/label-system/
+npm-debug.log*
+.vscode
+# config/local.js
+.idea
+label-system.*
