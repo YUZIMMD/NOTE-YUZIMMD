@@ -26,6 +26,10 @@ export default {
             title: '阴影移动',
             children: [],
             name: 'Refraction'
+        }, {
+            title: 'transition过渡效果',
+            children: [],
+            name: 'transition'
         }]
     }, {
         title: 'element框架拓展类',

@@ -33,6 +33,16 @@ const router = new Router({
                 name: "Refraction",
                 component: () =>
                     import ("@/view/Refraction/Refraction")
+            }, {
+                path: "/treeRadio",
+                name: "treeRadio",
+                component: () =>
+                    import ("@/view/tree-radio/treeRadio")
+            }, {
+                path: "/transition",
+                name: "transition",
+                component: () =>
+                    import ("@/view/transition/transition")
             }]
         }
     ]
