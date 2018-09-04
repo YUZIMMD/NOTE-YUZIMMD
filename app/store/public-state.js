@@ -21,13 +21,19 @@ export default {
         "数据开放门户"
     ],
     leftMenu: [{
-        title: '阴影移动',
+        title: 'css类',
         children: [{
             title: '阴影移动',
             children: [],
-            name: ''
-        }],
-        name: 'Refraction'
+            name: 'Refraction'
+        }]
+    }, {
+        title: 'element框架拓展类',
+        children: [{
+            title: '树形控件单选',
+            children: [],
+            name: 'treeRadio'
+        }]
     }],
     label_manage_paging: {
         index: '1',

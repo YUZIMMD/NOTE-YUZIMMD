@@ -4,7 +4,7 @@
         <div class="breadcrumbStyle">
             <el-breadcrumb separator-class="el-icon-arrow-right">
                 <div class="locationActive">注解：</div>
-                <el-breadcrumb-item>鼠标移动，通过控制阴影效果来实现光线的特效</el-breadcrumb-item>
+                <el-breadcrumb-item>鼠标移动，通过控制阴影效果来实现光线的特效(自定义指令，鼠标移动计算，box-shadow)</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="content-item">
