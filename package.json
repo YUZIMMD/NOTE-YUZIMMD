@@ -31,7 +31,7 @@
         "axios",
         "webpack"
     ],
-    "author": "dengyt",
+    "author": "dengyuting-YUZIMMD@outlook.com",
     "license": "MIT",
     "dependencies": {
         "element-ui": "^2.x.x",
