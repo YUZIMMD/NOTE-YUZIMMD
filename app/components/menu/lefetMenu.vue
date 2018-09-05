@@ -1,9 +1,9 @@
 <template>
   <div class="left_menu">
     <!-- 展开折叠开关 -->
-    <div class="menu-toggle" @click="isCollapse = !isCollapse">
-      <i class="el-icon-document" v-show="!isCollapse" title="收起"></i>
-      <i class="el-icon-tickets" v-show="isCollapse" title="展开"></i>
+    <div class="menu-toggle">
+      <i class="el-icon-document" @click="isCollapse = !isCollapse" v-show="!isCollapse" title="收起"></i>
+      <i class="el-icon-tickets" @click="isCollapse = !isCollapse" v-show="isCollapse" title="展开"></i>
     </div>
     <el-menu
       default-active="1"
