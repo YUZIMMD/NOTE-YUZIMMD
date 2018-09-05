@@ -38,6 +38,10 @@ export default {
             children: [],
             name: 'treeRadio'
         }]
+    }, {
+        title: 'echars图表类',
+        name: '',
+        children: []
     }],
     label_manage_paging: {
         index: '1',

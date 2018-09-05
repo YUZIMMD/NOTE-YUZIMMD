@@ -2,16 +2,16 @@
   <div>
     <Header></Header>
     <div class="cont-main">
-      <el-row>
-        <el-col :xs="9" :sm="7" :md="6" :lg="4" :xl="4">
+      <!-- <el-row> -->
+        <!-- <el-col :xs="9" :sm="7" :md="6" :lg="4" :xl="4"> -->
           <LefetMenu></LefetMenu>
-        </el-col>
-        <el-col :xs="15" :sm="17" :md="18" :lg="20" :xl="20" class="content">
+        <!-- </el-col> -->
+        <!-- <el-col :xs="15" :sm="17" :md="18" :lg="20" :xl="20" class="content"> -->
          <div class="content-item">
             <router-view></router-view>
          </div>
-        </el-col>
-      </el-row>
+        <!-- </el-col> -->
+      <!-- </el-row> -->
     </div>
   </div>
 </template>

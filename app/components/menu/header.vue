@@ -1,9 +1,10 @@
 <template>
-  <header class="header_menu">
+  <header class="header_menu" :style='{backgroundImage:"url("+headerbg+")"}'>
     <el-row class="header_sub_row">
       <el-col :xs="9" :sm="7" :md="6" :lg="4" :xl="4">
         <div class="headTitle">
           <!-- <img :src='systemIcon' alt=""  class="header_icon"/> -->
+          <i class="el-icon-menu foldStyle"></i>
           <span class="headerTitle"><h4>NOTE</h4></span>
         </div>
       </el-col>
@@ -46,6 +47,7 @@
   import mIcon from '@/assets/image/u66.png'
   import userIncon from '@/assets/image/u72.png'
   import exit from '@/assets/image/u213.png'
+  import headerbgx from '@/assets/image/common/headerbgmaing2-small.jpg'
 
   export default{
     name:'headers',
@@ -56,7 +58,8 @@
         localIcon:lIcon,
         emailIcon:mIcon,
         userIncons:userIncon,
-        exitIcon: exit
+        exitIcon: exit,
+        headerbg:headerbgx
       }
     },
     methods:{
@@ -72,3 +75,18 @@
   }
   
 </script>
+<style>
+.header_menu{
+  background-size: 160% 100%;
+}
+  .foldStyle{
+    color: #ffffff;
+    font-size: 30px;
+    left: 20px;
+    top: -5px;
+    position: relative;
+  }
+</style>
+
+
+

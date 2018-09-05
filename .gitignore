@@ -1,7 +1,7 @@
 node_modules/
-/label-system/
+/NOTE-YUZIMMD/
 npm-debug.log*
 .vscode
 # config/local.js
 .idea
-label-system.*
+NOTE-YUZIMMD.*

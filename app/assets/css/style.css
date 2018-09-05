@@ -106,11 +106,12 @@ html {
     display: inline-block;
     letter-spacing: 1px;
     color: #FFFFFF;
-    font-size: 16px
+    font-size: 22px;
+    margin-left: 15px;
 }
 
 .header_menu .headTitle {
-    background: #f78095;
+    /* background: #f78095; */
     line-height: 80px;
 }
 
@@ -225,7 +226,7 @@ html {
     margin-bottom: -9999px;
     float: left;
     display: inline;
-    background: #25364f;
+    background: rgba(0, 0, 0, 0.8);
     width: 100%;
 }
 
@@ -253,9 +254,7 @@ html {
 }
 
 .content-item {
-    margin: 1rem;
-    background: #FFFFFF;
-    border: 1px solid #E9E9E9;
+    padding: 1rem;
     overflow: hidden;
     position: relative;
     min-height: 400px;
@@ -375,7 +374,7 @@ html {
 /* 面包屑 */
 
 .breadcrumbStyle {
-    margin: 1rem;
+    margin: 1rem 0.2rem;
 }
 
 .breadcrumbStyle .locationActive {
@@ -395,4 +394,28 @@ html {
 
 .breadcrumbStyle .el-breadcrumb__item:last-child .el-breadcrumb__inner {
     opacity: 1;
+}
+
+.el-submenu__title:hover,
+.el-menu-item:focus,
+.el-menu-item:hover {
+    background-color: #5f5a5a;
+}
+
+.el-submenu .is-active {
+    border-left: 4px solid #a02a52;
+    background-color: #5f5a5a;
+}
+
+.el-submenu .is-active a {
+    color: #f06895;
+}
+
+.content-item .cont-main {
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.content-item .cont-main .content-item {
+    border: 1px solid #E9E9E9;
 }
