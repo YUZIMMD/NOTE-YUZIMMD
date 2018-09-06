@@ -12,14 +12,6 @@ export default {
         emailNumber: "88",
         roleId: "123"
     },
-    system_options: [
-        "政务信息资源中心",
-        "目录管理系统",
-        "数据采集系统",
-        "数据交换系统",
-        "数据共享门户",
-        "数据开放门户"
-    ],
     leftMenu: [{
         title: 'css类',
         children: [{
