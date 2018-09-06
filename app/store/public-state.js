@@ -10,7 +10,7 @@ export default {
         userName: "admin",
         local: "成都",
         emailNumber: "88",
-        roleId: ""
+        roleId: "123"
     },
     system_options: [
         "政务信息资源中心",

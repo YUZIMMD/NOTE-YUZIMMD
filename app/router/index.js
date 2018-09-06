@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
-// import store from "@/store/index";
-// import { Message } from "element-ui";
+import store from "@/store/index";
+import { Message } from "element-ui";
 
 Vue.use(Router);
 
@@ -14,6 +14,9 @@ const router = new Router({
         {
             path: "/login",
             name: "login",
+            meta: {
+                title: '登录'
+            },
             component: () =>
                 import ("@/view/login/logins")
         },
@@ -26,21 +29,33 @@ const router = new Router({
             children: [{
                 path: "/",
                 name: "main",
+                meta: {
+                    title: '首页'
+                },
                 component: () =>
                     import ("@/view/main/index")
             }, {
                 path: "/Refraction",
                 name: "Refraction",
+                meta: {
+                    title: '类光线效果'
+                },
                 component: () =>
                     import ("@/view/Refraction/Refraction")
             }, {
                 path: "/treeRadio",
                 name: "treeRadio",
+                meta: {
+                    title: '单选树形控件'
+                },
                 component: () =>
                     import ("@/view/tree-radio/treeRadio")
             }, {
                 path: "/transition",
                 name: "transition",
+                meta: {
+                    title: '过渡效果'
+                },
                 component: () =>
                     import ("@/view/transition/transition")
             }]
@@ -48,13 +63,14 @@ const router = new Router({
     ]
 });
 
-// router.beforeEach((to, from, next) => {
-//   if (to.name === "login" || store.state.user.roleId || sessionStorage.roleId) {
-//     next();
-//   } else {
-//     Message.error("未登录！");
-//     router.push("/login");
-//   }
-// });
+router.beforeEach((to, from, next) => {
+    window.document.title = to.meta.title;
+    if (to.name === "login" || store.state.user.roleId || sessionStorage.roleId) {
+        next();
+    } else {
+        Message.error("未登录！");
+        router.push("/login");
+    }
+});
 
 export default router;
