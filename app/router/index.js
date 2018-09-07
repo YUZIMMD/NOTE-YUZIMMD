@@ -58,6 +58,14 @@ const router = new Router({
                 },
                 component: () =>
                     import ("@/view/transition/transition")
+            }, {
+                path: "/echars",
+                name: "echars",
+                meta: {
+                    title: '过渡效果'
+                },
+                component: () =>
+                    import ("@/view/echars/echars")
             }]
         }
     ]
