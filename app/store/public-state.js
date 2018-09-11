@@ -24,6 +24,13 @@ export default {
             name: 'transition'
         }]
     }, {
+        title: 'js类',
+        children: [{
+            title: '异步',
+            children: [],
+            name: 'asynchronous'
+        }]
+    }, {
         title: 'element框架拓展类',
         children: [{
             title: '树形控件单选',
@@ -32,7 +39,7 @@ export default {
         }]
     }, {
         title: 'echars图表类',
-        name: '',
+        name: 'echars',
         children: []
     }],
     label_manage_paging: {

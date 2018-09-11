@@ -66,6 +66,14 @@ const router = new Router({
                 },
                 component: () =>
                     import ("@/view/echars/echars")
+            }, {
+                path: "/asynchronous",
+                name: "asynchronous",
+                meta: {
+                    title: '过渡效果'
+                },
+                component: () =>
+                    import ("@/view/asynchronous/asynchronous")
             }]
         }
     ]
