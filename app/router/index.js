@@ -67,13 +67,13 @@ const router = new Router({
                 component: () =>
                     import ("@/view/echars/echars")
             }, {
-                path: "/asynchronous",
-                name: "asynchronous",
+                path: "/checkAll",
+                name: "checkAll",
                 meta: {
-                    title: '过渡效果'
+                    title: '复选框'
                 },
                 component: () =>
-                    import ("@/view/asynchronous/asynchronous")
+                    import ("@/view/checkAll/checkAll")
             }]
         }
     ]
